@@ -322,7 +322,7 @@ namespace Bridle.Utilities
         {
             if (_keyedCollection.Contains(key) == false)
             {
-                throw new ArgumentException("The given key is not present in the dictionary: {0}".FormatWith(key));
+                throw new ArgumentException($"The given key \"{key}\" is not present in the dictionary.");
             }
             var kvp = _keyedCollection[key];
             return kvp.Value;
