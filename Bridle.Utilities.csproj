@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <Copyright>Copyright © Walter Barrett 2018-2021</Copyright>
+    <TargetFramework>net6.0</TargetFramework>
+    <Copyright>Copyright © Walter Barrett 2018-2024</Copyright>
     <Company>Walter Barrett</Company>
   </PropertyGroup>
 
