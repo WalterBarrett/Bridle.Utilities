@@ -260,7 +260,7 @@ namespace Bridle.Utilities
         {
             if (index < 0 || index >= _keyedCollection.Count)
             {
-                throw new ArgumentException("The index was outside the bounds of the dictionary: {0}".FormatWith(index));
+                throw new ArgumentException($"The index was outside the bounds of the dictionary: {index}");
             }
             return _keyedCollection[index];
         }
@@ -277,7 +277,7 @@ namespace Bridle.Utilities
         {
             if (index < 0 || index >= _keyedCollection.Count)
             {
-                throw new ArgumentException("The index is outside the bounds of the dictionary: {0}".FormatWith(index));
+                throw new ArgumentException($"The index is outside the bounds of the dictionary: {index}");
             }
             var kvp = new KeyValuePair<TKey, TValue>(_keyedCollection[index].Key, value);
             _keyedCollection[index] = kvp;
@@ -309,7 +309,7 @@ namespace Bridle.Utilities
         {
             if (index < 0 || index >= _keyedCollection.Count)
             {
-                throw new ArgumentException("The index was outside the bounds of the dictionary: {0}".FormatWith(index));
+                throw new ArgumentException($"The index was outside the bounds of the dictionary: {index}");
             }
             _keyedCollection.RemoveAt(index);
         }
